@@ -51,4 +51,14 @@ public class HomeController {
 	public void view(){
 		
 	}
+	
+	@GetMapping("/viewsample")
+	public void test(){
+		
+	}
+	
+	@GetMapping("/room")
+	public void room(){
+		
+	}
 }

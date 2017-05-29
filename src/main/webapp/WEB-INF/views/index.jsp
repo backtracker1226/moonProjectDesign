@@ -17,6 +17,7 @@
 
 <body>
 <%@ include file ="header.jsp" %>
+<%@ include file = "banner.jsp" %>
 <!-- Header -->
 
 <!-- Rooms -->
@@ -29,13 +30,11 @@
       <!-- Room -->
       <div class="col-sm-4">
         <div class="room-thumb">
-                <div class="thumbnail-wrapper">
-        <div class="thumbnail">
-        <div class="centered">
-                <img src="resources/images/rooms/4.jpg" alt="room 1" class="img-responsive"/>
+<div class="thumbnail-wrapper"> 
+
+                <img src="resources/images/rooms/height.jpg" alt="room 1" class="img-responsive"/>
         </div>
-        </div>
-        </div>
+
         
           <div class="mask">
             <div class="main">
@@ -66,9 +65,15 @@
           </div>
         </div>
       </div>
+
       <!-- Room -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="resources/images/rooms/123.JPG" alt="room 2" class="img-responsive" />
+        <div class="room-thumb">
+<div class="thumbnail-wrapper"> 
+
+                <img src="resources/images/rooms/roof2.jpg" alt="room 2" class="img-responsive"/>
+
+        </div>
           <div class="mask">
             <div class="main">
               <h5>King Size Bedroom </h5>
@@ -101,7 +106,7 @@
       
       <!-- Room -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="resources/images/rooms/1111.gif" alt="room 3" class="img-responsive" />
+        <div class="room-thumb"> <img src="resources/images/rooms/roof3.jpg" alt="room 3" class="img-responsive" />
           <div class="mask">
             <div class="main">
               <h5>Single room</h5>
@@ -120,7 +125,8 @@
                 </div>
                 <div class="col-xs-6">
                   <ul class="list-unstyled">
-                    <li><i class="fa fa-check-circle"></i> Free Wi-Fi</li>
+                    <li><i class=
+                    "fa fa-check-circle"></i> Free Wi-Fi</li>
                     <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
                     <li><i class="fa fa-check-circle"></i> Bathroom</li>
                   </ul>
@@ -131,9 +137,9 @@
           </div>
         </div>
       </div>
-      <!-- Room -->
+      <!-- Room 여기 -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="resources/images/rooms/3.jpg" alt="room 1" class="img-responsive" />
+        <div class="room-thumb"> <img src="resources/images/rooms/roof4.jpg" alt="room 4" class="img-responsive" />
           <div class="mask">
             <div class="main">
               <h5>Double bedroom</h5>
@@ -165,7 +171,7 @@
       </div>
       <!-- Room -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="resources/images/rooms/9.jpg" alt="room 1" class="img-responsive" />
+        <div class="room-thumb"> <img src="resources/images/rooms/roof5.jpg" alt="room 5" class="img-responsive" />
           <div class="mask">
             <div class="main">
               <h5>Double bedroom</h5>
@@ -197,7 +203,7 @@
       </div>
       <!-- Room -->
       <div class="col-sm-4">
-        <div class="room-thumb"> <img src="resources/images/rooms/356x228.gif" alt="room 1" class="img-responsive" />
+        <div class="room-thumb"> <img src="resources/images/rooms/roof6.jpg" alt="room 6" class="img-responsive" />
           <div class="mask">
             <div class="main">
               <h5>Double bedroom</h5>
