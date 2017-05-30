@@ -8,6 +8,8 @@ import javax.sql.DataSource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.moon.domain.BoardVO;
+import org.moon.persistence.ReviewBoardDAO;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -20,6 +22,9 @@ public class oracleCon {
 	@Inject
 	DataSource ds;
 	
+	@Inject
+	ReviewBoardDAO dao;
+	
 	@Test
 	public void oracleConTest(){
 		
@@ -30,6 +35,26 @@ public class oracleCon {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+	}
+	
+	@Test
+	public void insertTest() throws Exception{
+		
+		BoardVO vo = new BoardVO();
+		
+		vo.setTitle("JDBS제목 입니다.");
+		vo.setUname("하야시");
+		vo.setReviewcon("JDBC내용 입니다.");
+		
+		dao.create(vo);
+		
+	}
+	
+	@Test
+	public void readTest() throws Exception{
+		
+		dao.read(3);
 		
 	}
 	

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ <mapper namespace="org.moon.mappers.reviewBoardMapper">
+ 
+ <insert id="create">
+ 
+ insert into tbl_board_review(
+ bno, title, reviewcon, uname)
+ values(seq_board_review.nextval, #{title}, #{reviewcon}, #{uname})
+ 
+ </insert>
+ <select id="read" resultType="BoardVO">
+ 
+ select * from tbl_board_review where bno = #{bno}
+ 
+ </select>
+ 
+ <delete id="delete" parameterType="Integer">
+ 
+ delete from tbl_board_review where bno = #{bno}
+ 
+ </delete>
+ 
+ <update id="update" parameterType="BoardVO">
+ 
+ update tbl_board_review set title = #{title}, reviewcon = #{reviewcon}, uname = #{uname} where bno = #{bno} 
+ 
+ </update>
+ 
+ <select id="list" resultType="BoardVO">
+ 
+ select * from tbl_board_review
+ 
+ where bno > 0 
+ 
+ order by bno desc limit #{pages}, #{perPageNum}
+ 
+ </select>
+ 
+ <select id="totalSize" resultType="Integer">
+ 
+select count(*) from tbl_board_review
+where bno > 0
+ 
+ </select>
+ 
+
+ </mapper>
