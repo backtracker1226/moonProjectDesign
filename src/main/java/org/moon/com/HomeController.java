@@ -61,4 +61,14 @@ public class HomeController {
 	public void room(){
 		
 	}
+	
+	@GetMapping("/board")
+	public void board(){
+		
+	}
+	
+	@GetMapping("/review")
+	public void review(){
+		
+	}
 }

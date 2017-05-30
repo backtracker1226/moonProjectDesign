@@ -14,6 +14,28 @@
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
 	<dependencies>
+	<!-- 오라클 세팅 -->
+
+
+<!-- 스프링에서 JDBC 를 사용하기 위한 라이브러리 입니다. -->
+<dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-jdbc</artifactId>
+   <version>${org.springframework-version}</version>
+</dependency>
+
+
+<!-- 컨넥션 풀을 위한 라이브러리 -->
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+</dependency>
+
+
+<!-- 오라클 JDBC 드라이버 -->
+<!-- https://mvnrepository.com/artifact/com.hynnet/oracle-driver-ojdbc -->
+	<!-- 오라클 세팅 -->
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
