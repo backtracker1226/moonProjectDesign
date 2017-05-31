@@ -31,14 +31,20 @@
  </update>
  
  <select id="list" resultType="BoardVO">
- 
- select * from tbl_board_review
- 
- where bno > 0 
- 
- order by bno desc limit #{pages}, #{perPageNum}
+   <![CDATA[ 
+    select * from (select *
+        from (
+            select rownum rnum, bno, uname, title, reviewcon
+            from tbl_board_review
+            ) pagetable
+        where rnum <= #{perPageNum}
+    )
+where rnum >= #{pages}
+order by bno desc
+  ]]>
  
  </select>
+ 
  
  <select id="totalSize" resultType="Integer">
  

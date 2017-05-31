@@ -43,6 +43,7 @@
 
 	<context:component-scan base-package="org.moon.persistence"></context:component-scan>
 	<context:component-scan base-package="org.moon.controller"></context:component-scan>
+	<context:component-scan base-package="org.moon.service"></context:component-scan>
 	<context:component-scan base-package="org.moon.domain"></context:component-scan>
 		
 </beans>

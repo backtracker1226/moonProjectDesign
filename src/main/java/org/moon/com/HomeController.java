@@ -71,4 +71,9 @@ public class HomeController {
 	public void review(){
 		
 	}
+	
+	@GetMapping("/register")
+	public void register(){
+		
+	}
 }

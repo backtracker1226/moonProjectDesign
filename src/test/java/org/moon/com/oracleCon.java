@@ -13,6 +13,7 @@ import org.moon.persistence.ReviewBoardDAO;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+import org.moon.domain.Criteria;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"file:src/main/webapp/WEB-INF/spring/**/*-context.xml"})
@@ -56,6 +57,16 @@ public class oracleCon {
 		
 		dao.read(3);
 		
+	}
+	
+	@Test
+	public void listpage()throws Exception{
+		
+		Criteria cri = new Criteria();
+		
+		cri.setPage(1);
+		cri.setPerPageNum(10);
+		dao.list(cri);
 	}
 	
 	
