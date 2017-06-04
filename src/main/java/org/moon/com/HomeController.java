@@ -37,7 +37,7 @@ public class HomeController {
 		return "home";
 	}
 	
-	@GetMapping("/index")
+/*	@GetMapping("/index")
 	public void mainView(){
 		
 	}
@@ -75,5 +75,5 @@ public class HomeController {
 	@GetMapping("/register")
 	public void register(){
 		
-	}
+	}*/
 }

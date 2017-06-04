@@ -45,7 +45,6 @@ order by bno desc
  
  </select>
  
- 
  <select id="totalSize" resultType="Integer">
  
 select count(*) from tbl_board_review

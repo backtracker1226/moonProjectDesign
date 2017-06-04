@@ -54,7 +54,7 @@
 						<div class="col-sm-11">
 
 
-							<textarea class="textarea" placeholder="Place some text here" name="reviewcon"
+							<textarea class="textarea" placeholder="Place some text here"
 								style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
 						</div>
 
@@ -63,9 +63,9 @@
 						<label for="inputWriter" class="col-sm-1 control-label">작성자</label>
 						<div class="col-sm-11">
 
-							<input
-								type="text" name="uname" id="inputWriter" class="form-control" value="임시유저"
-								
+							<input type="hidden" name="writer" class="form-control"
+								value="guest@jpcms.com" readonly="readonly"> <input
+								type="text" id="inputWriter" class="form-control" value="구경온손님"
 								readonly="readonly">
 						</div>
 					</div>

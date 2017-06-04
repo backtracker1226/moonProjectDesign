@@ -20,6 +20,8 @@ public interface ReviewBoardDAO {
 	
 	public List<BoardVO> list(Criteria cri)throws Exception;
 	
+	public List<BoardVO> list2()throws Exception;
+	
 	public Integer getCount(Criteria cri)throws Exception;
 	
 }

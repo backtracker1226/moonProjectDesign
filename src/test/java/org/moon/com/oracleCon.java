@@ -55,7 +55,7 @@ public class oracleCon {
 	@Test
 	public void readTest() throws Exception{
 		
-		dao.read(3);
+		dao.read(23);
 		
 	}
 	
@@ -67,6 +67,14 @@ public class oracleCon {
 		cri.setPage(1);
 		cri.setPerPageNum(10);
 		dao.list(cri);
+	}
+	
+	@Test
+	public void listpage2()throws Exception{
+
+		dao.list2();
+		
+		System.out.println(dao.list2().toString());
 	}
 	
 	

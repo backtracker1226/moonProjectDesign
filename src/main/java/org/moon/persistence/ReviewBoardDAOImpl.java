@@ -56,4 +56,10 @@ public class ReviewBoardDAOImpl implements ReviewBoardDAO {
 		return ses.selectOne(namespace + ".totalSize", cri);
 	}
 
+	@Override
+	public List<BoardVO> list2() throws Exception {
+		// TODO Auto-generated method stub
+		return ses.selectList(namespace + ".list2");
+	}
+
 }

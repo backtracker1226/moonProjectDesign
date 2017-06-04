@@ -44,10 +44,16 @@ public class ReviewBoardServiceImpl implements ReviewBoardService {
 	}
 
 	@Override
-	public List<BoardVO> listAll() throws Exception {
+	public List<BoardVO> listAll(Criteria cri) throws Exception {
 		// TODO Auto-generated method stub dao.list(cri);
-		return null;
+		return dao.list(cri);
 				
+	}
+
+	@Override
+	public List<BoardVO> listAll2() throws Exception {
+		// TODO Auto-generated method stub
+		return dao.list2();
 	}
 
 }

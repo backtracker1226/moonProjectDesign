@@ -3,6 +3,7 @@ package org.moon.service;
 import java.util.List;
 
 import org.moon.domain.BoardVO;
+import org.moon.domain.Criteria;
 
 public interface ReviewBoardService {
 	
@@ -15,6 +16,10 @@ public interface ReviewBoardService {
 	
 	public void remove(Integer bno)throws Exception;
 	
-	public List<BoardVO> listAll()throws Exception;
+	public List<BoardVO> listAll(Criteria cri)throws Exception;
+	
+	public List<BoardVO> listAll2()throws Exception;
+	
+
 
 }
