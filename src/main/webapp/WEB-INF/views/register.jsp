@@ -35,10 +35,11 @@
 	<!-- Left side column. contains the logo and sidebar -->
 
 
-	<div class="col-md-8 col-md-offset-2">
+	<div class="col-md-8 col-md-offset-2" >
+	
 		<div class="box box-primary" style="border-top-color: white;">
-			<form role="form" method="post" id="registerForm"
-				class="form-horizontal">
+		
+			<form role="form" method="post" id="registerForm" class="form-horizontal" enctype="multipart/form-data">
 
 				<div class="box-body">
 					<div class="form-group">
@@ -55,7 +56,7 @@
 
 
 							<textarea class="textarea" placeholder="Place some text here" name="reviewcon"
-								style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+								style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
 						</div>
 
 					</div>
@@ -73,10 +74,12 @@
 						<label for="inputFile" class="col-sm-1 control-label">파일
 							업로드</label>
 						<div class="col-sm-11">
-							<div class="fileDrop form-control">
-								<i class="fa fa-fw fa-file-picture-o"></i> 이곳에 등록할 사진 또는 파일을
-								올려주세요.
-							</div>
+							<div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile" name="file">
+
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
 							<div>
 								<hr>
 							</div>

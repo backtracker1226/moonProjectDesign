@@ -68,7 +68,7 @@
 							<td style="text-align: left;">${BoardVO.title}</td>
 							<td style="text-align: left;">${BoardVO.uname}</td>
 							<td>${BoardVO.regdate}</td>
-							<td>${BoardVO.viewctn}</td>
+							<td><span class="badge bg-red">${BoardVO.viewctn}</span></td>
 							<td><span class="label label-success">Approved</span></td>
 						</tr>
 						</c:forEach>

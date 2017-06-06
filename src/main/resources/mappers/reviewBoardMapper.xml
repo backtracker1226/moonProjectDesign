@@ -34,7 +34,7 @@
    <![CDATA[ 
     select * from (select *
         from (
-            select rownum rnum, bno, uname, title, reviewcon
+            select rownum rnum, bno, uname, title, reviewcon , regdate, viewctn
             from tbl_board_review
             ) pagetable
         where rnum <= #{perPageNum}
